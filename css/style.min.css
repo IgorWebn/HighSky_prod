@@ -728,18 +728,18 @@ body.ie ._ibg img {
   width: 100%;
 }
 
-.header.forTeams {
+.header.black {
   position: relative;
   z-index: 100;
 }
-.header.forTeams .header__logo {
+.header.black .header__logo {
   cursor: pointer;
   display: block;
 }
-.header.forTeams .header__logo svg > path:not(:last-child) {
+.header.black .header__logo svg > path:not(:last-child) {
   fill: #262626 !important;
 }
-.header.forTeams .nav__link {
+.header.black .nav__link {
   color: #262626;
 }
 
@@ -2368,3 +2368,369 @@ body.ie ._ibg img {
 }
 /*-------------END-what-do----------*/
 /*---END-FOR_Teams------*/
+/*----FOR_Players------*/
+/*--------------for-players-section---------*/
+.for-players__body {
+  height: 100vh;
+  min-height: 200px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.for-players__elips1 {
+  position: absolute;
+  top: -10px;
+  left: -20px;
+  background: linear-gradient(90deg, #2BC0E4 0%, #EAECC6 100%);
+  background: -o-linear-gradient(90deg, #2BC0E4 0%, #EAECC6 100%);
+  background: -webkit-linear-gradient(90deg, #2BC0E4 0%, #EAECC6 100%);
+  background: -ms-linear-gradient(90deg, #2BC0E4 0%, #EAECC6 100%);
+  background: -moz-linear-gradient(90deg, #2BC0E4 0%, #EAECC6 100%);
+  -ms-filter: blur(200px);
+  filter: blur(200px);
+  transform: rotate(15deg);
+  z-index: -10;
+  width: calc(370px + 43 * ((100vw - 375px) / 1065));
+  height: calc(444px + 144 * ((100vw - 375px) / 1065));
+}
+.for-players__elips2 {
+  position: absolute;
+  bottom: 20px;
+  right: -51px;
+  background: linear-gradient(90deg, #DAD299 0%, #B0DAB9 100%);
+  background: -o-linear-gradient(90deg, #DAD299 0%, #B0DAB9 100%);
+  background: -webkit-linear-gradient(90deg, #DAD299 0%, #B0DAB9 100%);
+  background: -ms-linear-gradient(90deg, #DAD299 0%, #B0DAB9 100%);
+  background: -moz-linear-gradient(90deg, #DAD299 0%, #B0DAB9 100%);
+  -ms-filter: blur(200px);
+  filter: blur(200px);
+  transform: rotate(15deg);
+  z-index: -10;
+  width: calc(358px + 55 * ((100vw - 375px) / 1065));
+  height: calc(390px + 99 * ((100vw - 375px) / 1065));
+}
+.for-players-object {
+  position: absolute;
+  z-index: -1;
+}
+.for-players-object__egg {
+  top: 106px;
+  right: 0;
+}
+.for-players-object__egg img {
+  width: calc(242px + 86 * ((100vw - 375px) / 1065));
+  height: calc(220px + 80 * ((100vw - 375px) / 1065));
+}
+.for-players-object__eggs {
+  bottom: 10px;
+  left: 16px;
+}
+.for-players-object__eggs img {
+  width: calc(294px + 84 * ((100vw - 375px) / 1065));
+  height: calc(208px + 60 * ((100vw - 375px) / 1065));
+}
+.for-players__title {
+  font-weight: 700;
+  line-height: 83%;
+  letter-spacing: -0.015em;
+  color: #262626;
+  text-align: center;
+  font-size: calc(48px + 76 * ((100vw - 375px) / 1065));
+   max-width: calc(340px + 730 * ((100vw - 375px) / 1065));
+   margin-bottom: calc(32px + 24 * ((100vw - 375px) / 1065));
+}
+.for-players__title span {
+  color: #0094FF;
+}
+.for-players__subtitle {
+  font-family: "GTAmerica";
+  font-weight: 300;
+  line-height: 130%;
+  letter-spacing: -0.035em;
+  text-align: center;
+  color: #262626;
+  font-size: calc(18px + 4 * ((100vw - 375px) / 1065));
+  max-width: calc(340px + 268 * ((100vw - 375px) / 1065));
+}
+
+@media screen and (max-width: 991.98px) {
+  .for-players__title {
+    line-height: 100%;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 479.98px) {
+  .for-players__subtitle {
+    text-align: left;
+  }
+  .for-players__elips1 {
+    top: -220px;
+    left: -200px;
+  }
+  .for-players__elips2 {
+    bottom: -200px;
+    right: -200px;
+  }
+}
+/*-------------END-for-players-section----------*/
+/*-------------what-need----------*/
+.what-need__body {
+  min-height: 200px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 128px;
+  padding-bottom: 144px;
+}
+.what-need__elips1 {
+  position: absolute;
+  top: 365px;
+  left: 322px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #EF32D9 0%, #89FFFD 100%);
+  background: -o-linear-gradient(90deg, #EF32D9 0%, #89FFFD 100%);
+  background: -webkit-linear-gradient(90deg, #EF32D9 0%, #89FFFD 100%);
+  background: -ms-linear-gradient(90deg, #EF32D9 0%, #89FFFD 100%);
+  background: -moz-linear-gradient(90deg, #EF32D9 0%, #89FFFD 100%);
+  -ms-filter: blur(230px);
+  filter: blur(230px);
+  transform: rotate(225deg);
+  z-index: -5;
+  height: calc(370px + 43 * ((100vw - 375px) / 1065));
+  width: calc(540px + 183 * ((100vw - 375px) / 1065));
+}
+.what-need__title {
+  text-align: center;
+  font-weight: 700;
+  line-height: 83%;
+  letter-spacing: -0.015em;
+  font-size: calc(40px + 40 * ((100vw - 375px) / 1065));
+  margin-bottom: calc(32px + 8 * ((100vw - 375px) / 1065));
+  max-width: calc(340px + 416 * ((100vw - 375px) / 1065));
+}
+.what-need__subtitle {
+  font-family: "GTAmerica";
+  font-weight: 300;
+  line-height: 130%;
+  letter-spacing: -0.035em;
+  text-align: center;
+  color: #262626;
+  font-size: calc(18px + 4 * ((100vw - 375px) / 1065));
+  max-width: calc(280px + 132 * ((100vw - 375px) / 1065));
+  margin-bottom: calc(56px + 24 * ((100vw - 375px) / 1065));
+}
+.what-need__slider {
+  display: flex;
+}
+.what-need__slider > *:not(:last-child) {
+  margin-right: 24px;
+}
+
+.slide-need.slide1__icon {
+  width: 102px;
+  height: 124px;
+}
+
+.slide-need.slide2__icon {
+  width: 180px;
+  height: 102px;
+}
+
+.slide-need.slide3__icon {
+  width: 120px;
+  height: 122px;
+}
+
+.slide-need.slide4__icon {
+  width: 100px;
+  height: 124px;
+}
+
+.slide-need {
+  width: 326px;
+  height: 326px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.slide-need__title {
+  line-height: 110%;
+  font-weight: 500;
+  margin-top: 24px;
+  text-align: center;
+  font-size: calc(20px + 4 * ((100vw - 375px) / 1065));
+}
+
+/*-------------END-what-need----------*/
+/*-------------how-much----------*/
+.how-much__body {
+  height: 1755px;
+  min-height: 200px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.how-much__durk-elipse {
+  position: absolute;
+  bottom: 0;
+  width: 120vw;
+  height: 120vw;
+  z-index: -9;
+  border-radius: 50%;
+  background: #262626;
+}
+.how-much__line {
+  position: relative;
+  background: #FFFFFF;
+  box-shadow: -8px 5px 84px rgba(0, 0, 0, 0.08);
+   height: calc(110px + 45 * ((100vw - 375px) / 1065));
+  width: 220vw;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+.how-much__line-subtitle {
+  margin-top: 200px;
+  display: flex;
+  margin-bottom: calc(80px + 104 * ((100vw - 375px) / 1065));
+}
+.how-much__line-subtitle > *:first-child {
+  margin-right: calc(0px + 331 * ((100vw - 375px) / 1065));
+}
+.how-much__line-subtitle p {
+  font-weight: 500;
+  line-height: 130%;
+  text-align: center;
+  color: #FFFFFF;
+   max-width: calc(340px + 53 * ((100vw - 375px) / 1065));
+   font-size: calc(24px + 8 * ((100vw - 375px) / 1065));
+}
+.how-much__line-subtitle p span {
+  color: #0094FF;
+}
+.how-much__line .h {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 76px;
+  line-height: 100%;
+  color: #262626;
+}
+.how-much__line1 {
+  transform: translate(-320px, 0) rotate(21.6deg);
+  z-index: 2;
+}
+.how-much__line1-before {
+  position: absolute;
+  height: 500px;
+  width: 220vw;
+  background: white;
+  transform: translate(-320px, -100%) rotate(21.6deg);
+  z-index: -8;
+}
+.how-much__line2 {
+  margin-top: 95px;
+  transform: translate(-208px, 0) rotate(-12deg);
+  z-index: 1;
+}
+.how-much__line2-before {
+  position: absolute;
+  width: 220vw;
+  height: 500px;
+  background: white;
+  transform: translate(-208px, -50%) rotate(-12deg);
+  z-index: -8;
+}
+.how-much__main {
+  color: white;
+  text-align: center;
+}
+.how-much__main-title {
+  font-weight: 700;
+  line-height: 83%;
+  letter-spacing: -0.015em;
+  font-size: calc(40px + 40 * ((100vw - 375px) / 1065));
+  max-width: calc(340px + 594 * ((100vw - 375px) / 1065));
+}
+.how-much__main-number {
+  position: absolute;
+  font-weight: 700;
+  line-height: 90%;
+  letter-spacing: -0.02em;
+  opacity: 0.05;
+  transform: translate(-18%, -25%);
+  font-size: calc(40px + 297 * ((100vw - 375px) / 1065));
+}
+.how-much__main-icon {
+  display: flex;
+  justify-content: center;
+  margin-top: calc(56px + 24 * ((100vw - 375px) / 1065));
+}
+.how-much__main-icon img {
+  height: calc(186px + 68 * ((100vw - 375px) / 1065));
+  width: calc(153px + 57 * ((100vw - 375px) / 1065));
+}
+.how-much__main-subtitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 500;
+  line-height: 130%;
+  font-size: calc(32px + 16 * ((100vw - 375px) / 1065));
+  margin-bottom: calc(56px + 24 * ((100vw - 375px) / 1065));
+}
+.how-much__main-subtitle .h {
+  text-align: center;
+  margin-top: calc(24px + 8 * ((100vw - 375px) / 1065));
+  margin-bottom: calc(16px + 8 * ((100vw - 375px) / 1065));
+  max-width: calc(340px + 479 * ((100vw - 375px) / 1065));
+}
+.how-much__main-subtitle .p {
+  font-family: "GTAmerica";
+  font-weight: 300;
+  line-height: 130%;
+  letter-spacing: -0.035em;
+  max-width: 304px;
+  font-size: calc(18px + 4 * ((100vw - 375px) / 1065));
+  margin-bottom: calc(80px + 64 * ((100vw - 375px) / 1065));
+}
+
+/*-------------END-how-much----------*/
+/*-------------why-join----------*/
+.why-join__body {
+  min-height: 200px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: calc(96px + 88 * ((100vw - 375px) / 1065));
+}
+.why-join__title {
+  text-align: center;
+  font-weight: 700;
+  line-height: 83%;
+  letter-spacing: -0.015em;
+  font-size: calc(40px + 40 * ((100vw - 375px) / 1065));
+  margin-bottom: calc(32px + 8 * ((100vw - 375px) / 1065));
+  max-width: calc(340px + 477 * ((100vw - 375px) / 1065));
+}
+.why-join__subtitle {
+  font-family: "GTAmerica";
+  font-weight: 300;
+  line-height: 130%;
+  letter-spacing: -0.035em;
+  text-align: center;
+  color: #262626;
+  font-size: calc(18px + 4 * ((100vw - 375px) / 1065));
+  max-width: calc(280px + 132 * ((100vw - 375px) / 1065));
+  margin-bottom: calc(56px + 24 * ((100vw - 375px) / 1065));
+}
+
+/*-------------END-why-join---------*/
+/*---END-FOR_Players------*/
