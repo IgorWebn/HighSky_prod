@@ -16,14 +16,14 @@
 @font-face {
   font-family: "GTAmerica";
   font-display: swap;
-  src:  url("../fonts/GT-America-Extended-Light.woff") format("woff");
+  src: url("../fonts/GT-America-Extended-Light.woff2") format("woff2"), url("../fonts/GT-America-Extended-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: "GTAmerica";
   font-display: swap;
-  src:  url("../fonts/GT-America-Regular.woff") format("woff");
+  src: url("../fonts/GT-America-Regular.woff2") format("woff2"), url("../fonts/GT-America-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -1096,21 +1096,17 @@ body.ie ._ibg img {
   height: 46px;
   width: 46px;
   border-radius: 50%;
-  border: 1px solid #FFFFFF;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.for-investors__icons .disc:hover {
-  border: none;
+.for-investors__icons .disc {
   background: #7581F0;
 }
-.for-investors__icons .twit:hover {
-  border: none;
+.for-investors__icons .twit {
   background: #5bceff;
 }
-.for-investors__icons .tel:hover {
-  border: none;
+.for-investors__icons .tel {
   background: #0094ff;
 }
 .for-investors__lines {
@@ -1584,6 +1580,8 @@ body.ie ._ibg img {
   position: relative;
   border-radius: 16px;
   margin-right: 24px;
+  display: flex;
+  flex-direction: column;
   height: calc(426px + 123 * ((100vw - 375px) / 1065));
   width: calc(343px + 99 * ((100vw - 375px) / 1065));
   padding: calc(32px + 8 * ((100vw - 375px) / 1065));
@@ -1620,6 +1618,7 @@ body.ie ._ibg img {
   z-index: -1;
 }
 .your-keys .card-keys__title {
+  white-space: nowrap;
   margin-top: 30px;
   font-weight: 500;
   line-height: 130%;
@@ -1627,15 +1626,16 @@ body.ie ._ibg img {
   margin-top: calc(0px + 30 * ((100vw - 375px) / 1065));
 }
 .your-keys .card-keys__icon {
+  flex: 1 1 auto;
   display: flex;
 }
 .your-keys .card-keys__icon img {
-  margin: 48px auto;
+  margin: auto;
   height: calc(122px + 23 * ((100vw - 375px) / 1065));
   width: calc(122px + 23 * ((100vw - 375px) / 1065));
 }
 .your-keys .card-keys__subtitle {
-  max-width: 338px;
+  max-width: 360px;
   font-family: "GTAmerica";
   font-weight: 300;
   line-height: 130%;
@@ -2456,7 +2456,7 @@ body.ie ._ibg img {
   text-align: center;
   color: #262626;
   font-size: calc(18px + 4 * ((100vw - 375px) / 1065));
-  max-width: calc(340px + 268 * ((100vw - 375px) / 1065));
+  max-width: calc(340px + 267 * ((100vw - 375px) / 1065));
 }
 
 @media screen and (max-width: 991.98px) {
