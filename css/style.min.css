@@ -1215,19 +1215,9 @@ body.ie ._ibg img {
   position: absolute;
 }
 .why-object__elips1 {
-  top: -23px;
-  background: linear-gradient(90deg, #9796f0 0%, #fbc7d4 100%);
-  background: -o-linear-gradient(90deg, #9796f0 0%, #fbc7d4 100%);
-  background: -webkit-linear-gradient(90deg, #9796f0 0%, #fbc7d4 100%);
-  background: -ms-linear-gradient(90deg, #9796f0 0%, #fbc7d4 100%);
-  background: -moz-linear-gradient(90deg, #9796f0 0%, #fbc7d4 100%);
-  -ms-filter: blur(200px);
-  filter: blur(200px);
-  transform: rotate(-27.97deg);
   z-index: -10;
-  width: calc(345px + 68 * ((100vw - 375px) / 1065));
-  height: calc(495px + 97 * ((100vw - 375px) / 1065));
-  left: calc(-67px + -179 * ((100vw - 375px) / 1065));
+  left: 0;
+  top: 0;
 }
 .why-object__akyla {
   left: 32px;
@@ -2297,7 +2287,6 @@ body.ie ._ibg img {
   align-items: center;
   width: 100%;
   height: 60%;
-  background: #8C73F4;
   border-radius: 16px;
 }
 .what-do .card-what__icon img {
@@ -2314,9 +2303,6 @@ body.ie ._ibg img {
   max-width: calc(280px + 70 * ((100vw - 375px) / 1065));
 }
 .what-do .card-what.card-what2:after {
-  background: #FCCB4C;
-}
-.what-do .card-what.card-what2 .card-what__icon {
   background: #FCCB4C;
 }
 .what-do .card-what.card-what2 .card-what__icon img {
