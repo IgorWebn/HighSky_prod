@@ -1573,7 +1573,6 @@ body.ie ._ibg img {
   margin-top: calc(16px + 119 * ((100vw - 375px) / 1065));
 }
 .your-keys .card-keys.card2 .card-keys__icon img {
-  margin: 48px auto 78px;
   height: calc(145px + 72 * ((100vw - 375px) / 1065));
   width: calc(160px + 84 * ((100vw - 375px) / 1065));
 }
