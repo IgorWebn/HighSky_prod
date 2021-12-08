@@ -880,18 +880,15 @@ body.ie ._ibg img {
 }
 .footer-object__elips1 {
   z-index: -10;
+  left: calc(-300px + -200 * ((100vw - 375px) / 1065));
   top: 216px;
   left: 117px;
   width: 413px;
   height: 708.66px;
-  filter: blur(250px);
-  background: linear-gradient(90deg, #FBED96 0%, #ABECD6 100%);
-  transform: rotate(38.84deg);
-  background: -o-linear-gradient(90deg, #FBED96 0%, #ABECD6 100%);
-  background: -webkit-linear-gradient(90deg, #FBED96 0%, #ABECD6 100%);
-  background: -ms-linear-gradient(90deg, #FBED96 0%, #ABECD6 100%);
-  background: -moz-linear-gradient(90deg, #FBED96 0%, #ABECD6 100%);
-  -ms-filter: blur(250px);
+}
+.footer-object__elips1 img {
+  width: calc(1000px + 420 * ((100vw - 375px) / 1065));
+  height: calc(1070px + 416 * ((100vw - 375px) / 1065));
 }
 .footer__body {
   min-height: 744px;
@@ -1216,8 +1213,12 @@ body.ie ._ibg img {
 }
 .why-object__elips1 {
   z-index: -10;
-  left: 0;
-  top: 0;
+  left: calc(-300px + -200 * ((100vw - 375px) / 1065));
+  top: calc(-300px + -100 * ((100vw - 375px) / 1065));
+}
+.why-object__elips1 img {
+  width: calc(1050px + 210 * ((100vw - 375px) / 1065));
+  height: calc(1133px + 227 * ((100vw - 375px) / 1065));
 }
 .why-object__akyla {
   left: 32px;
@@ -1229,19 +1230,13 @@ body.ie ._ibg img {
   top: calc(0px + 95 * ((100vw - 375px) / 1065));
 }
 .why-object__elips2 {
-  right: -58px;
-  bottom: 36px;
-  background: linear-gradient(90deg, #DAD299 0%, #B0DAB9 100%);
-  filter: blur(200px);
-  background: -o-linear-gradient(90deg, #DAD299 0%, #B0DAB9 100%);
-  background: -webkit-linear-gradient(90deg, #DAD299 0%, #B0DAB9 100%);
-  background: -ms-linear-gradient(90deg, #DAD299 0%, #B0DAB9 100%);
-  background: -moz-linear-gradient(90deg, #DAD299 0%, #B0DAB9 100%);
-  -ms-filter: blur(200px);
-  transform: rotate(15deg);
   z-index: -10;
-  width: calc(362px + 51 * ((100vw - 375px) / 1065));
-  height: calc(430px + 59.61 * ((100vw - 375px) / 1065));
+  right: calc(-300px + -160 * ((100vw - 375px) / 1065));
+  bottom: calc(-300px + -100 * ((100vw - 375px) / 1065));
+}
+.why-object__elips2 img {
+  width: calc(1000px + 220 * ((100vw - 375px) / 1065));
+  height: calc(1070px + 216 * ((100vw - 375px) / 1065));
 }
 .why__title {
   max-width: 285px;
@@ -1513,23 +1508,15 @@ body.ie ._ibg img {
 }
 .your-keys-object {
   position: absolute;
-  top: 0;
-  left: 0;
 }
 .your-keys-object__elips1 {
   z-index: -10;
-  top: -137px;
-  filter: blur(200px);
-  background: linear-gradient(90deg, #2BC0E4 0%, #EAECC6 100%);
-  background: -o-linear-gradient(90deg, #2BC0E4 0%, #EAECC6 100%);
-  background: -webkit-linear-gradient(90deg, #2BC0E4 0%, #EAECC6 100%);
-  background: -ms-linear-gradient(90deg, #2BC0E4 0%, #EAECC6 100%);
-  background: -moz-linear-gradient(90deg, #2BC0E4 0%, #EAECC6 100%);
-  -ms-filter: blur(200px);
-  transform: rotate(15deg);
-  left: calc(109px + 711 * ((100vw - 375px) / 1065));
-  width: calc(341px + 72 * ((100vw - 375px) / 1065));
-  height: calc(391px + 201 * ((100vw - 375px) / 1065));
+  left: calc(0px + 200 * ((100vw - 375px) / 1065));
+  top: calc(-300px + -237 * ((100vw - 375px) / 1065));
+}
+.your-keys-object__elips1 img {
+  width: calc(1000px + 420 * ((100vw - 375px) / 1065));
+  height: calc(1070px + 416 * ((100vw - 375px) / 1065));
 }
 .your-keys__title {
   max-width: 1000px;
@@ -1661,6 +1648,10 @@ body.ie ._ibg img {
   }
 }
 @media screen and (max-width: 479.98px) {
+  .your-keys-object__elips1 {
+    left: -250px;
+    top: -450px;
+  }
   .your-keys__title {
     line-height: 100%;
   }
@@ -1685,18 +1676,11 @@ body.ie ._ibg img {
 }
 .provide-object__elips1 {
   z-index: -10;
-  top: 350px;
-  left: -30px;
-  width: 413px;
-  height: 592px;
-  filter: blur(250px);
-  background: linear-gradient(90deg, #9796F0 0%, #FBC7D4 100%);
-  background: -o-linear-gradient(90deg, #9796F0 0%, #FBC7D4 100%);
-  background: -webkit-linear-gradient(90deg, #9796F0 0%, #FBC7D4 100%);
-  background: -ms-linear-gradient(90deg, #9796F0 0%, #FBC7D4 100%);
-  background: -moz-linear-gradient(90deg, #9796F0 0%, #FBC7D4 100%);
-  -ms-filter: blur(250px);
-  transform: rotate(45deg);
+  left: calc(-300px + -200 * ((100vw - 375px) / 1065));
+}
+.provide-object__elips1 img {
+  width: calc(1000px + 420 * ((100vw - 375px) / 1065));
+  height: calc(1070px + 416 * ((100vw - 375px) / 1065));
 }
 .provide__title {
   max-width: 70%;
@@ -1827,10 +1811,6 @@ body.ie ._ibg img {
   }
 }
 @media screen and (max-width: 479.98px) {
-  .provide-object__elips1 {
-    top: 350px;
-    left: 86px;
-  }
   .provide__title {
     max-width: 100%;
     line-height: 100%;
