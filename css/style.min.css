@@ -1220,11 +1220,11 @@ body.ie ._ibg img {
 }
 .why-object__elips1 {
   top: -23px;
-  background: linear-gradient(90deg, rgb(151, 150, 240) 0%, rgb(251, 199, 212) 100%);
-      background: -o-linear-gradient(90deg,rgb(151, 150, 240) 0%, rgb(251, 199, 212) 100%);
-      background: -webkit-linear-gradient(90deg, rgb(151, 150, 240) 0%, rgb(251, 199, 212) 100%);
-      background: -ms-linear-gradient(90deg, rgb(151, 150, 240) 0%, rgb(251, 199, 212) 100%);
-      background: -moz-linear-gradient(90deg, rgb(151, 150, 240) 0%, rgb(251, 199, 212) 100%);
+  background: linear-gradient(90deg, rgba(151, 150, 240,1) 0%, rgba(251, 199, 212,1) 100%);
+  background: -o-linear-gradient(90deg, rgba(151, 150, 240,1) 0%, rgba(251, 199, 212,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(151, 150, 240,1) 0%, rgba(251, 199, 212,1) 100%);
+  background: -ms-linear-gradient(90deg, rgba(151, 150, 240,1) 0%, rgba(251, 199, 212,1) 100%);
+  background: -moz-linear-gradient(90deg,  rgba(151, 150, 240,1) 0%, rgba(251, 199, 212,1) 100%);
   -ms-filter: blur(200px);
   filter: blur(200px);
   transform: rotate(-27.97deg);
