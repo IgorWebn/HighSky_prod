@@ -3084,6 +3084,9 @@ body.ie ._ibg img {
     width: 100%;
     margin: 0 16px;
   }
+  .road-of-love__resources > *:not(:last-child) {
+    margin-bottom: 64px;
+  }
   .road-of-love__resources > *:nth-child(1) {
     position: static;
   }
@@ -3103,8 +3106,12 @@ body.ie ._ibg img {
   .road-of-love .road-love2 {
     display: block;
     position: absolute;
+    top: 310px;
+    left: 16px;
     z-index: -3;
-    height: 100vh;
+    height: 909px;
+    top: calc(310px + 140 * ((100vw - 375px) / 1065));
+    left: calc(16px + 584 * ((100vw - 375px) / 1065));
   }
 
   .love-resource {
@@ -3115,6 +3122,33 @@ body.ie ._ibg img {
   .love-resource:nth-child(even) {
     margin-left: auto;
     margin-right: calc(0px + 200 * ((100vw - 375px) / 1065));
+  }
+}
+@media screen and (min-width: 1440px) {
+  .road-of-love__resources {
+    display: flex;
+  }
+  .road-of-love__resources > *:nth-child(1) {
+    position: absolute;
+    left: calc(0px + 150 * ((100vw - 375px) / 1065));
+    top: calc(378px + 200 * ((100vw - 375px) / 1065));
+  }
+  .road-of-love__resources > *:nth-child(2) {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: calc(290px + 200 * ((100vw - 375px) / 1065));
+  }
+  .road-of-love__resources > *:nth-child(3) {
+    position: absolute;
+    right: calc(0px + 150 * ((100vw - 375px) / 1065));
+    top: calc(270px + 132 * ((100vw - 375px) / 1065));
+  }
+
+  .love-resource {
+    height: calc(240px + 30 * ((100vw - 375px) / 1065));
+    width: calc(240px + 30 * ((100vw - 375px) / 1065));
+    border: 1px solid rgba(0, 0, 0, 0.2);
   }
 }
 /*-------------END-road-of-love---------*/
@@ -3144,14 +3178,14 @@ body.ie ._ibg img {
   line-height: 100%;
   text-transform: uppercase;
   color: #FFFFFF;
-  box-shadow: 0 0 30px rgba(0, 148, 255, 0.6);
+  box-shadow: 0 0 30px #0094ff;
   background: #0094FF;
   border-radius: 50%;
   padding-top: calc(72px + 52 * ((100vw - 375px) / 1065));
   padding-left: calc(28px + 19 * ((100vw - 375px) / 1065));
-  font-size: calc(20px + 4 * ((100vw - 375px) / 1065));
-  width: calc(180px + 46 * ((100vw - 375px) / 1065));
-  height: calc(180px + 46 * ((100vw - 375px) / 1065));
+  font-size: calc(14px + 10 * ((100vw - 375px) / 1065));
+  width: calc(132px + 94 * ((100vw - 375px) / 1065));
+  height: calc(132px + 94 * ((100vw - 375px) / 1065));
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -3159,25 +3193,65 @@ body.ie ._ibg img {
 
 #pre-footer1 {
   top: 19px;
-  left: 10%;
-  width: calc(180px + 100 * ((100vw - 375px) / 1065));
-  height: calc(180px + 60 * ((100vw - 375px) / 1065));
+  left: calc(0px + 144 * ((100vw - 375px) / 1065));
+}
+#pre-footer1 img {
+  width: calc(208px + 72 * ((100vw - 375px) / 1065));
+  height: calc(177px + 63 * ((100vw - 375px) / 1065));
 }
 
 #pre-footer2 {
   transform: rotate(-30deg);
   top: 20%;
   right: 5%;
-  width: calc(180px + 246 * ((100vw - 375px) / 1065));
-  height: calc(180px + 140 * ((100vw - 375px) / 1065));
+}
+#pre-footer2 img {
+  width: calc(300px + 140 * ((100vw - 375px) / 1065));
+  height: calc(300px + 40 * ((100vw - 375px) / 1065));
 }
 
 #pre-footer3 {
-  left: 15%;
   bottom: 16px;
-  width: calc(180px + 223 * ((100vw - 375px) / 1065));
-  height: calc(180px + 105 * ((100vw - 375px) / 1065));
+  left: calc(22px + 234 * ((100vw - 375px) / 1065));
+}
+#pre-footer3 img {
+  width: calc(258px + 145 * ((100vw - 375px) / 1065));
+  height: calc(183px + 102 * ((100vw - 375px) / 1065));
 }
 
+@media screen and (max-width: 991.98px) {
+  #pre-footer1 {
+    display: block;
+    top: 127px;
+  }
+
+  #pre-footer2 {
+    display: block;
+    top: unset;
+    right: unset;
+    bottom: calc(180px + 246 * ((100vw - 375px) / 1065));
+    left: calc(200px + 700 * ((100vw - 375px) / 1065));
+  }
+
+  #pre-footer3 {
+    bottom: 16px;
+  }
+}
+@media screen and (max-width: 479.98px) {
+  #pre-footer2 {
+    bottom: 35%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  #pre-footer1 img {
+    width: calc(70px + 210 * ((100vw - 375px) / 1065));
+    height: calc(60px + 180 * ((100vw - 375px) / 1065));
+  }
+
+  #pre-footer2 img {
+    width: calc(240px + 200 * ((100vw - 375px) / 1065));
+    height: calc(184px + 156 * ((100vw - 375px) / 1065));
+  }
+}
 /*-------------END-pre-footer---------*/
 /*---END-FOR_Players------*/
