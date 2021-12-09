@@ -1675,7 +1675,7 @@ body.ie ._ibg img {
   z-index: -10;
   left: calc(-300px + -200 * ((100vw - 375px) / 1065));
 }
-.provide-object__elips1 img {
+.provide-object__elips1 svg {
   width: calc(1000px + 420 * ((100vw - 375px) / 1065));
   height: calc(1070px + 416 * ((100vw - 375px) / 1065));
 }
