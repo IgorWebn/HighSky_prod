@@ -3277,7 +3277,6 @@ body.ie ._ibg img {
 }
 .error-page__body {
   height: 100vh;
-  min-height: 815px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -3369,7 +3368,7 @@ body.ie ._ibg img {
     left: calc(0px + 400 * ((100vw - 375px) / 1065));
   }
   .error-page__obj1 {
-    top: 50px;
+    top: 10px;
     left: -80px;
     transform: rotate(15deg);
   }
