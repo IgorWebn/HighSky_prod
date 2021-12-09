@@ -931,6 +931,7 @@ body.ie ._ibg img {
   padding: 0 258px;
 }
 .one-network-obj > * {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1204,6 +1205,55 @@ body.ie ._ibg img {
     margin-left: calc(0px + 300 * ((100vw - 375px) / 1065));
   }
 }
+/*-------animation---------*/
+@keyframes fillAction {
+  0% {
+    transform: translate(0, 150px);
+  }
+  100% {
+    transform: translate(0, -5px);
+  }
+}
+@keyframes waveAction {
+  0% {
+    transform: translate(-150px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+#banner {
+  display: none;
+  position: absolute;
+  z-index: -3;
+  border-radius: 50%;
+  width: 125px;
+  height: 125px;
+  overflow: hidden;
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0) scale(4);
+}
+
+#banner .fill {
+  display: none;
+  animation-name: fillAction;
+  animation-iteration-count: 0.7;
+  animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+#banner #waveShape {
+  display: none;
+  animation-name: waveAction;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 0.5s;
+  width: 300px;
+  height: 0;
+  fill: #0094FF;
+}
+
 /*---------------WHY---------------*/
 .why__body {
   position: relative;
@@ -1277,6 +1327,7 @@ body.ie ._ibg img {
 }
 
 .circle-block {
+  position: relative;
   width: calc(343px + 182 * ((100vw - 375px) / 1065));
   height: calc(343px + 182 * ((100vw - 375px) / 1065));
   border-radius: 50%;
@@ -1287,6 +1338,19 @@ body.ie ._ibg img {
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
+}
+@media (hover: hover) {
+  .circle-block:hover #banner {
+    display: block;
+    transform: translate3d(0, 0, 0) scale(4);
+  }
+  .circle-block:hover #banner .fill {
+    display: block;
+  }
+  .circle-block:hover #banner #waveShape {
+    display: block;
+    fill: #0094FF;
+  }
 }
 .circle-block__icon {
   margin-bottom: 32px;
@@ -2061,10 +2125,19 @@ body.ie ._ibg img {
 }
 .for-teams__main-icon {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.for-teams__main-icon img {
+.for-teams__main-icon .icon-on {
   width: calc(331px + 167 * ((100vw - 375px) / 1065));
   height: calc(330px + 165 * ((100vw - 375px) / 1065));
+  animation: line infinite 20s linear;
+}
+.for-teams__main-icon .icon-in {
+  position: absolute;
+  width: calc(185px + 115 * ((100vw - 375px) / 1065));
+  height: calc(185px + 115 * ((100vw - 375px) / 1065));
 }
 .for-teams__main .p1, .for-teams__main .p2 {
   position: absolute;
