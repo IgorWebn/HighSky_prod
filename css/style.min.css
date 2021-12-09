@@ -1212,8 +1212,12 @@ body.ie ._ibg img {
   z-index: -10;
   left: calc(-300px + -200 * ((100vw - 375px) / 1065));
   top: calc(-300px + -100 * ((100vw - 375px) / 1065));
+  /*img{
+    @include adaptiv-value('width', 1260, 1050, 0);
+    @include adaptiv-value('height', 1360,1133, 0);
+  } */
 }
-.why-object__elips1 img {
+.why-object__elips1 svg {
   width: calc(1050px + 210 * ((100vw - 375px) / 1065));
   height: calc(1133px + 227 * ((100vw - 375px) / 1065));
 }
@@ -1675,7 +1679,7 @@ body.ie ._ibg img {
   z-index: -10;
   left: calc(-300px + -200 * ((100vw - 375px) / 1065));
 }
-.provide-object__elips1 svg {
+.provide-object__elips1 img {
   width: calc(1000px + 420 * ((100vw - 375px) / 1065));
   height: calc(1070px + 416 * ((100vw - 375px) / 1065));
 }
