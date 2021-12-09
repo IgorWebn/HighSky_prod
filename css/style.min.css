@@ -880,8 +880,8 @@ body.ie ._ibg img {
 }
 .footer-object__elips1 {
   z-index: -10;
-  left: -500px;
-  bottom: -300px;
+  left: -400px;
+  bottom: -500px;
 }
 .footer-object__elips1 img {
   width: 1420px;
@@ -977,6 +977,7 @@ body.ie ._ibg img {
 
   .footer-object__elips1 {
     bottom: -400px;
+    left: -500px;
   }
   .footer__title {
     position: relative;
