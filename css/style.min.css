@@ -1066,6 +1066,14 @@ body.ie ._ibg img {
   height: calc(54px + 4 * ((100vw - 375px) / 1065));
 }
 
+@keyframes line {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /*----FOR_INVESTORS------*/
 .for-investors {
   min-height: 744px;
@@ -2082,7 +2090,8 @@ body.ie ._ibg img {
   top: 602px;
   right: 94px;
 }
-.for-teams__main .join-us {
+
+.join-us {
   display: block;
   cursor: pointer;
   position: absolute;
@@ -3260,3 +3269,129 @@ body.ie ._ibg img {
 }
 /*-------------END-pre-footer---------*/
 /*---END-FOR_Players------*/
+/*----FOR_404------*/
+/*-------------error-Page----------*/
+.error-page .join-us {
+  top: 60%;
+  left: 30%;
+}
+.error-page__body {
+  height: 100vh;
+  min-height: 815px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.error-page__obj1, .error-page__obj2, .error-page__obj3, .error-page__obj4 {
+  position: absolute;
+}
+.error-page__obj1 {
+  top: calc(70px + 54 * ((100vw - 375px) / 1065));
+  left: calc(0px + 100 * ((100vw - 375px) / 1065));
+}
+.error-page__obj1 img {
+  width: calc(320px + 60 * ((100vw - 375px) / 1065));
+  height: calc(280px + 48 * ((100vw - 375px) / 1065));
+}
+.error-page__obj2 {
+  bottom: calc(10px + 64 * ((100vw - 375px) / 1065));
+  left: calc(0px + 100 * ((100vw - 375px) / 1065));
+}
+.error-page__obj2 img {
+  width: calc(270px + 203 * ((100vw - 375px) / 1065));
+  height: calc(220px + 181 * ((100vw - 375px) / 1065));
+}
+.error-page__obj3 {
+  top: calc(0px + 80 * ((100vw - 375px) / 1065));
+  right: calc(0px + 100 * ((100vw - 375px) / 1065));
+}
+.error-page__obj3 img {
+  width: calc(361px + 92 * ((100vw - 375px) / 1065));
+  height: calc(331px + 86 * ((100vw - 375px) / 1065));
+}
+.error-page__obj4 {
+  bottom: calc(10px + 64 * ((100vw - 375px) / 1065));
+  right: calc(0px + 100 * ((100vw - 375px) / 1065));
+}
+.error-page__obj4 img {
+  width: calc(240px + 140 * ((100vw - 375px) / 1065));
+  height: calc(220px + 140 * ((100vw - 375px) / 1065));
+}
+.error-page__elips1 {
+  position: absolute;
+  z-index: -10;
+  top: -400px;
+  right: -400px;
+}
+.error-page__elips1 img {
+  width: calc(1000px + 208 * ((100vw - 375px) / 1065));
+  height: calc(1070px + 310 * ((100vw - 375px) / 1065));
+}
+.error-page__elips2 {
+  position: absolute;
+  bottom: -500px;
+  left: -300px;
+  z-index: -10;
+}
+.error-page__elips2 img {
+  width: calc(1000px + 208 * ((100vw - 375px) / 1065));
+  height: calc(1070px + 310 * ((100vw - 375px) / 1065));
+}
+.error-page__title {
+  position: relative;
+  font-weight: 700;
+  line-height: 83%;
+  letter-spacing: -0.015em;
+  font-size: calc(64px + 60 * ((100vw - 375px) / 1065));
+}
+.error-page__title-line {
+  position: absolute;
+  animation: line infinite 20s linear;
+}
+.error-page__title-line img {
+  width: calc(344px + 191 * ((100vw - 375px) / 1065));
+  height: calc(344px + 191 * ((100vw - 375px) / 1065));
+}
+
+.error-page__icons {
+  display: none;
+}
+
+@media screen and (max-width: 991.98px) {
+  .error-page__icons {
+    display: flex;
+  }
+
+  .error-page .join-us {
+    top: 60%;
+    left: calc(0px + 400 * ((100vw - 375px) / 1065));
+  }
+  .error-page__obj1 {
+    top: 50px;
+    left: -80px;
+    transform: rotate(15deg);
+  }
+  .error-page__obj2 {
+    display: none;
+  }
+  .error-page__obj3 {
+    top: unset;
+    bottom: -50px;
+    right: -100px;
+  }
+  .error-page__obj4 {
+    display: none;
+  }
+  .error-page__elips1 {
+    top: -400px;
+    right: -400px;
+  }
+  .error-page__elips2 {
+    bottom: -500px;
+    left: -300px;
+  }
+}
+/*-------------END-error-Page----------*/
+/*---END-FOR_404------*/
