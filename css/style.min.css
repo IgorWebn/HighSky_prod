@@ -880,15 +880,12 @@ body.ie ._ibg img {
 }
 .footer-object__elips1 {
   z-index: -10;
-  left: calc(-300px + -200 * ((100vw - 375px) / 1065));
-  top: 216px;
-  left: 117px;
-  width: 413px;
-  height: 708.66px;
+  left: -500px;
+  bottom: -300px;
 }
 .footer-object__elips1 img {
-  width: calc(1000px + 420 * ((100vw - 375px) / 1065));
-  height: calc(1070px + 416 * ((100vw - 375px) / 1065));
+  width: 1420px;
+  height: 1486px;
 }
 .footer__body {
   min-height: 744px;
@@ -979,8 +976,7 @@ body.ie ._ibg img {
   }
 
   .footer-object__elips1 {
-    top: 144px;
-    left: -60px;
+    bottom: -400px;
   }
   .footer__title {
     position: relative;
