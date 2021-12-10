@@ -1211,7 +1211,15 @@ body.ie ._ibg img {
     transform: translate(0, 150px);
   }
   100% {
-    transform: translate(0, -5px);
+    transform: translate(0, -15px);
+  }
+}
+@keyframes fillActionNo {
+  0% {
+    transform: translate(0, 50px);
+  }
+  100% {
+    transform: translate(0, 300px);
   }
 }
 @keyframes waveAction {
@@ -1223,7 +1231,6 @@ body.ie ._ibg img {
   }
 }
 #banner {
-  display: none;
   position: absolute;
   z-index: -3;
   border-radius: 50%;
@@ -1235,20 +1242,18 @@ body.ie ._ibg img {
 }
 
 #banner .fill {
-  display: none;
-  animation-name: fillAction;
-  animation-iteration-count: 0.7;
+  animation-name: fillActionNo;
   animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
-  animation-duration: 4s;
+  animation-duration: 2s;
   animation-fill-mode: forwards;
+  border-radius: 50%;
 }
 
 #banner #waveShape {
-  display: none;
   animation-name: waveAction;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  animation-duration: 0.5s;
+  animation-duration: 1s;
   width: 300px;
   height: 0;
   fill: #0094FF;
@@ -1340,15 +1345,35 @@ body.ie ._ibg img {
   box-sizing: border-box;
 }
 @media (hover: hover) {
+  .circle-block:hover {
+    color: white;
+  }
   .circle-block:hover #banner {
-    display: block;
+    position: absolute;
+    z-index: -3;
+    border-radius: 50%;
+    width: 125px;
+    height: 125px;
+    overflow: hidden;
+    backface-visibility: hidden;
     transform: translate3d(0, 0, 0) scale(4);
   }
   .circle-block:hover #banner .fill {
-    display: block;
+    animation-name: fillAction;
+    animation-iteration-count: 0.7;
+    animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    border-radius: 50%;
+    padding: -5px;
   }
   .circle-block:hover #banner #waveShape {
-    display: block;
+    animation-name: waveAction;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    width: 300px;
+    height: 0;
     fill: #0094FF;
   }
 }
