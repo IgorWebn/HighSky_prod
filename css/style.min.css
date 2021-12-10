@@ -1332,6 +1332,7 @@ body.ie ._ibg img {
 }
 
 .circle-block {
+  transition: color 0.5s ease;
   position: relative;
   width: calc(343px + 182 * ((100vw - 375px) / 1065));
   height: calc(343px + 182 * ((100vw - 375px) / 1065));
@@ -1347,6 +1348,7 @@ body.ie ._ibg img {
 @media (hover: hover) {
   .circle-block:hover {
     color: white;
+    transition: color 0.5s ease 0.2s;
   }
   .circle-block:hover #banner {
     position: absolute;
