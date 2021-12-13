@@ -1288,6 +1288,10 @@ body.ie ._ibg img {
   left: 32px;
   top: calc(0px + 114 * ((100vw - 375px) / 1065));
 }
+.why-object__akyla img {
+  width: calc(200px + 102 * ((100vw - 375px) / 1065));
+  height: calc(158px + 100 * ((100vw - 375px) / 1065));
+}
 .why-object__tigr {
   right: -30px;
   transform: rotate(13.76deg);
@@ -1448,11 +1452,66 @@ body.ie ._ibg img {
 }
 /*--------------END-WHY---------------*/
 /*------------YouInvest--------------*/
+/*Slider*/
+.round-slider {
+  display: grid;
+  position: absolute;
+  justify-self: center;
+  align-self: center;
+  border-radius: 50%;
+  cursor: pointer;
+  user-select: none;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  bottom: calc(18px + 14 * ((100vw - 375px) / 1065));
+  width: calc(300px + 535 * ((100vw - 375px) / 1065));
+  height: calc(295px + 530 * ((100vw - 375px) / 1065));
+  z-index: 10000;
+}
+@media (min-width: 1440px) {
+  .round-slider {
+    width: calc(295px + 530 * ((100vw - 375px) / 1065));
+  }
+}
+
+.round-slider .selection {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  grid-row: 1;
+  grid-column: 1;
+  justify-self: center;
+  align-self: center;
+  pointer-events: none;
+  border: 10px solid #0094FF;
+  clip-path: polygon(0% 52%, 0% 32%, 50% 50%);
+}
+
+.round-slider_after {
+  display: block;
+  width: 3px;
+  height: calc(147.5px + 265 * ((100vw - 375px) / 1065));
+  position: absolute;
+  left: calc(50% - 1px);
+  bottom: calc(18px + 14 * ((100vw - 375px) / 1065));
+  transform-origin: 1px 100%;
+  transform: rotate(-70deg);
+}
+
+.round-slider_after:after {
+  display: block;
+  content: "";
+  width: calc(19px + 20 * ((100vw - 375px) / 1065));
+  height: calc(19px + 20 * ((100vw - 375px) / 1065));
+  border-radius: 50%;
+  background-color: #0094FF;
+  transform: translate(-50%, -40%);
+}
+
 .you-invest {
   position: relative;
   min-height: 344px;
-  background: #262626;
-  z-index: -2;
+  overflow: hidden;
 }
 .you-invest__body {
   padding-top: calc(56px + 24 * ((100vw - 375px) / 1065));
@@ -1462,7 +1521,17 @@ body.ie ._ibg img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
+  background: #262626;
+  z-index: -2;
+}
+.you-invest__body:before {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  background: #262626;
+  z-index: -100;
+  top: 0;
 }
 .you-invest__body_before {
   text-align: center;
@@ -1500,7 +1569,7 @@ body.ie ._ibg img {
   flex-direction: column;
   align-items: center;
   z-index: 10;
-  width: calc(325px + 492 * ((100vw - 375px) / 1065));
+  width: calc(295px + 530 * ((100vw - 375px) / 1065));
   height: calc(163px + 245.5 * ((100vw - 375px) / 1065));
 }
 .you-invest .invest-slider__title {
@@ -1571,8 +1640,8 @@ body.ie ._ibg img {
   z-index: 1;
 }
 .you-invest .invest-slider .line-elips svg {
-  width: calc(295px + 525 * ((100vw - 375px) / 1065));
-  height: calc(148px + 263 * ((100vw - 375px) / 1065));
+  width: calc(295px + 530 * ((100vw - 375px) / 1065));
+  height: calc(147.5px + 265 * ((100vw - 375px) / 1065));
 }
 
 @media screen and (max-width: 991.98px) {
@@ -1592,6 +1661,10 @@ body.ie ._ibg img {
   .you-invest .invest-slider {
     margin-top: 0;
     padding-bottom: 42px;
+  }
+
+  .round-slider .selection {
+    border: 5px solid #0094FF;
   }
 }
 /*-----------END-YouInvest--------------*/
