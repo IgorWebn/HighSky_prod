@@ -1454,6 +1454,7 @@ body.ie ._ibg img {
 /*------------YouInvest--------------*/
 /*Slider*/
 .round-slider {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   display: grid;
   position: absolute;
   justify-self: center;
@@ -1464,7 +1465,7 @@ body.ie ._ibg img {
   left: 50%;
   transform: translate(-50%, 50%);
   bottom: calc(18px + 14 * ((100vw - 375px) / 1065));
-  width: calc(300px + 535 * ((100vw - 375px) / 1065));
+  width: calc(295px + 530 * ((100vw - 375px) / 1065));
   height: calc(295px + 530 * ((100vw - 375px) / 1065));
   z-index: 10000;
 }
@@ -1483,7 +1484,7 @@ body.ie ._ibg img {
   justify-self: center;
   align-self: center;
   pointer-events: none;
-  border: 10px solid #0094FF;
+  background: url("../img/ForInvestors/slider/line-elips.svg") center/cover no-repeat;
   clip-path: polygon(0% 52%, 0% 32%, 50% 50%);
 }
 
@@ -1663,8 +1664,8 @@ body.ie ._ibg img {
     padding-bottom: 42px;
   }
 
-  .round-slider .selection {
-    border: 5px solid #0094FF;
+  .round-slider .selection path {
+    stroke-width: 6;
   }
 }
 /*-----------END-YouInvest--------------*/
@@ -2149,10 +2150,30 @@ body.ie ._ibg img {
 }
 /*-------------END-For-managers----------*/
 /*-------------avia-parallax----------*/
-.avia-parallax__body img {
+.mouse-parallax {
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+.mouse-parallax-bg {
+  position: absolute;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 110%;
+  height: 110%;
+  transition: all 0.1s ease;
+}
+
+.avia {
+  background-image: url("../img/forTeams/2049.png");
+}
+
+.avia-parallax__body {
   width: 100%;
   min-height: 350px;
-  object-fit: cover;
+  height: calc(350px + 394 * ((100vw - 375px) / 1065));
 }
 
 /*-------------END-avia-parallax----------*/
